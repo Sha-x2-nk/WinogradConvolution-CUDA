@@ -36,7 +36,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>460.54 us</td>
     <td>24.74 us</td>
     <td>511.71 us</td>
-    <td>0.234</td>
+    <td>0.03</td>
   </tr>
   <tr>
     <td>cuDNN Non Fused</td>
@@ -45,7 +45,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>2.47 ms</td>
     <td>162.88 us</td>
     <td>2.8 ms</td>
-    <td>0.031</td>
+    <td>0.01</td>
   </tr>
   <tr>
     <td rowspan="3">[1, 256, 56, 56, 256, 1]</td>
@@ -64,7 +64,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>242.27 us</td>
     <td>40.58 us</td>
     <td><b>331.81 us</b></td>
-    <td>0.085</td>
+    <td>0.08</td>
   </tr>
   <tr>
     <td>cuDNN Non Fused</td>
@@ -73,7 +73,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>2.3 ms</td>
     <td>315.36 us</td>
     <td>2.95 ms</td>
-    <td>0.015</td>
+    <td>0.02</td>
   </tr>
   <tr>
     <td rowspan="3">[1, 128, 112, 112, 128, 1]</td>
@@ -121,7 +121,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>3.6 ms</td>
     <td>344.03 us</td>
     <td><b>4.36 ms</b></td>
-    <td>0.234</td>
+    <td>0.2</td>
   </tr>
   <tr>
     <td>cuDNN Non Fused</td>
@@ -149,7 +149,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>3.29 ms</td>
     <td>669.86 us</td>
     <td><b>4.9 ms</b></td>
-    <td>0.093</td>
+    <td>0.09</td>
   </tr>
   <tr>
     <td>cuDNN Non Fused</td>
@@ -178,7 +178,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>3.21 ms</td>
     <td>1.18 ms</td>
     <td><b>6.07 ms</b></td>
-    <td>0.054</td>
+    <td>0.04</td>
 
   </tr>
   <tr>
@@ -188,7 +188,7 @@ We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
     <td>4.71 ms</td>
     <td>1.55 ms</td>
     <td>7.95 ms</td>
-    <td>0.015</td>
+    <td>0.01</td>
   </tr>
 
 </table>
