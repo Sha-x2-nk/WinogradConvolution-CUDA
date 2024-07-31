@@ -1,6 +1,6 @@
 ## Phases
 Non fused winograd algorithm works in 4 phases.
-1. <b>Filter Transform</b>: Transform the filters from spatial domain to Winograd domain. [GgGT]
+1. <b>Filter Transform</b>: Transform the filters from spatial domain to Winograd domain. [GgG<sup>T</sup>]
 ```cpp
 // computing filter transform
 float *d_filter_transform;
@@ -19,7 +19,7 @@ dim3 grid(divUp(K * C,
 
 winograd_4x4_3x3_GgGT<NUM_KERNELS_PER_BLOCK, BLOCK_SIZE><<<grid, BLOCK_SIZE>>>(d_F, K, C, d_filter_transform);
 ```
-2. <b>Input Transform</b>: Transform the input from spatial domain to Winograd domain.[BTdB]
+2. <b>Input Transform</b>: Transform the input from spatial domain to Winograd domain.[B<sup>T</sup>dB]
 ```cpp
 float *d_inp_transform;
 float *d_img;
@@ -66,7 +66,7 @@ CUBLAS_CALL(cublasSgemmStridedBatched(cbls_handle,
 CUDA_CALL(cudaFree(d_filter_transform));
 CUDA_CALL(cudaFree(d_inp_transform));
 ```
-4. <b>Inverse Transform</b>: Transform the output back from Winograd domain to spatial domain.[ATtA]
+4. <b>Inverse Transform</b>: Transform the output back from Winograd domain to spatial domain.[A<sup>T</sup>tA]
 ```cpp
 // inverse transform
 float *d_out;
