@@ -4,7 +4,7 @@ The following table compares the performance of this implementation against cuDN
 |--|--|--|
 |Nvidia RTX 3070Ti Laptop GPU|Windows 11|Visual Studio 22|
 
-We strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
+I strongly feel cuDNN also uses 4x4_3x3 implementation of winograd.
 
 <!-- </br> -->
 <table>
